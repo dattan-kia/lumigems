@@ -15,9 +15,9 @@
                 <div class="col-span-2 flex items-center justify-center">
                     <!-- Logo -->
                     <div class="flex items-center">
-                        <a href="../index.html">
+                        <a href="../../../lumigems/index.html">
                             <img
-                                src="../../assets/imgs/logo.png"
+                                src="../../../lumigems/assets/imgs/logo.png"
                                 alt="Logo"
                                 class="h-20"
                             />
@@ -37,7 +37,7 @@
                     <!-- Cart -->
                     <div class="relative">
                         <a
-                            href="../cart.html"
+                            href="../../../lumigems/cart.html"
                             class="text-black hover:text-orange-500 flex items-center gap-4"
                         >
                             GIỎ HÀNG
@@ -71,7 +71,7 @@
                     <ul class="w-full grid grid-cols-6">
                         <li class="flex justify-center items-center">
                             <a
-                                href="../about.html"
+                                href="../../../lumigems/about.html"
                                 class="w-full text-black hover:text-orange-500 px-4 py-2 flex justify-center items-center"
                                 >CÂU CHUYỆN</a
                             >
@@ -81,7 +81,7 @@
                             class="flex justify-center items-center relative group"
                         >
                             <a
-                                href="../products.html"
+                                href="../../../lumigems/products.html"
                                 class="text-black hover:text-orange-500 flex items-center justify-center w-full px-4 py-2"
                                 >SẢN PHẨM
 
@@ -93,7 +93,7 @@
                             class="flex justify-center items-center relative group"
                         >
                             <a
-                                href="../../blogs/index.html"
+                                href="../../../lumigems/blogs/index.html"
                                 class="text-black hover:text-orange-500 flex items-center justify-center w-full px-4 py-2"
                                 >BLOGS
                                 <svg
@@ -117,14 +117,14 @@
                             >
                                 <li class="flex justify-center items-center">
                                     <a
-                                        href="../../blogs/nhom-lua.html"
+                                        href="../../../lumigems/blogs/nhom-lua.html"
                                         class="w-full px-4 py-2 text-black hover:bg-gray-100"
                                         >NHÓM LỬA</a
                                     >
                                 </li>
                                 <li class="flex justify-center items-center">
                                     <a
-                                        href="../../blogs/nhom-nuoc.html"
+                                        href="../../../lumigems/blogs/nhom-nuoc.html"
                                         class="w-full px-4 py-2 text-black hover:bg-gray-100"
                                         >NHÓM NƯỚC</a
                                     >
@@ -147,7 +147,7 @@
                         </li>
                         <li class="flex justify-center items-center">
                             <a
-                                href="../contact.html"
+                                href="../../../lumigems/contact.html"
                                 class="w-full text-black hover:text-orange-500 px-4 py-2 flex justify-center items-center"
                                 >LIÊN HỆ</a
                             >

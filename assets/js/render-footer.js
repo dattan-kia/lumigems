@@ -8,7 +8,7 @@
                 <!-- Company Info -->
                 <div class="col-span-1">
                     <img
-                        src="../../assets/imgs/logo.png"
+                        src="../../../lumigems/assets/imgs/logo.png"
                         alt="Logo-Gumigems"
                         class="mb-4"
                     />
@@ -85,7 +85,7 @@
                     <ul class="text-sm text-gray-700 space-y-2">
                         <li>
                             <a
-                                href="./about.html"
+                                href="../../../lumigems/about.html"
                                 class="hover:text-gray-900 hover:underline"
                                 >CÂU CHUYỆN</a
                             >
@@ -99,14 +99,14 @@
                         </li>
                         <li>
                             <a
-                                href="#"
+                                href="../../../lumigems/blogs/index.html"
                                 class="hover:text-gray-900 hover:underline"
-                                >BLOG</a
+                                >BLOGS</a
                             >
                         </li>
                         <li>
                             <a
-                                href="./contact.html"
+                                href="../../../lumigems/contact.html"
                                 class="hover:text-gray-900 hover:underline"
                                 >LIÊN HỆ</a
                             >

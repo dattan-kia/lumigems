@@ -99,7 +99,7 @@ function renderCartItems() {
                     >
                         THANH TOÁN
                     </button>
-                    <a href="../LumiGems/products.html" class="block ">
+                    <a href="../lumigems/products.html" class="block ">
                         <button
                         class="px-5 py-2 bg-white text-black border border-black font-bold w-full"
                         >

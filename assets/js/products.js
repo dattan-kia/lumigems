@@ -9,7 +9,7 @@ function renderProductGrid() {
             <div class="rounded-lg overflow-hidden hover:shadow-lg hover:cursor-pointer product-grid-item" data-product-id="${
                 product.id
             }">
-            <a href="../../product-details.html" class="block w-full h-full">
+            <a href="../../../lumigems/product-details.html" class="block w-full h-full">
                 <img class="w-full aspect-square object-cover" src="${
                     product.image
                 }" alt="Product Image">

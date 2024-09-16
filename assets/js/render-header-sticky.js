@@ -6,7 +6,7 @@ headerDom.innerHTML = `
                 <!-- Logo -->
                 <a class="flex items-center space-x-2" href="../index.html">
                     <img
-                        src="../assets/imgs/logo.png"
+                        src="../../../lumigems/assets/imgs/logo.png"
                         alt="Logo"
                         class="h-10 w-10"
                     />
@@ -20,7 +20,7 @@ headerDom.innerHTML = `
                             class="flex justify-center items-center relative group"
                         >
                             <a
-                                href="../index.html"
+                                href="../../../lumigems/index.html"
                                 class="w-full text-black hover:text-orange-500 px-4 py-2 flex justify-center items-center"
                                 >Trang chủ</a
                             >
@@ -29,7 +29,7 @@ headerDom.innerHTML = `
                             class="flex justify-center items-center relative group"
                         >
                             <a
-                                href="../products.html"
+                                href="../../../lumigems/products.html"
                                 class="w-full text-black hover:text-orange-500 px-4 py-2 flex justify-center items-center"
                                 >Sản phẩm</a
                             >
@@ -38,7 +38,7 @@ headerDom.innerHTML = `
                             class="flex justify-center items-center relative group"
                         >
                             <a
-                                href="../blogs/index.html"
+                                href="../../../lumigems/blogs/index.html"
                                 class="w-full text-black hover:text-orange-500 px-4 py-2 flex justify-center items-center"
                             >
                                 Blogs
@@ -62,14 +62,14 @@ headerDom.innerHTML = `
                             >
                                 <li class="flex justify-center items-center">
                                     <a
-                                        href="../blogs/nhom-lua.html"
+                                        href="../../../lumigems/blogs/nhom-lua.html"
                                         class="w-full px-4 py-2 text-black hover:bg-gray-100"
                                         >NHÓM LỬA</a
                                     >
                                 </li>
                                 <li class="flex justify-center items-center">
                                     <a
-                                        href="../blogs/nhom-nuoc.html"
+                                        href="../../../lumigems/blogs/nhom-nuoc.html"
                                         class="w-full px-4 py-2 text-black hover:bg-gray-100"
                                         >NHÓM NƯỚC</a
                                     >
@@ -80,7 +80,7 @@ headerDom.innerHTML = `
                             class="flex justify-center items-center relative group"
                         >
                             <a
-                                href="../cart.html"
+                                href="../../../lumigems/cart.html"
                                 class="w-full text-black hover:text-orange-500 px-4 py-2 flex justify-center items-center"
                                 >Giỏ hàng</a
                             >
