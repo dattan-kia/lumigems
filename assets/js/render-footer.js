@@ -8,7 +8,7 @@
                 <!-- Company Info -->
                 <div class="col-span-1">
                     <img
-                        src="/assets/imgs/logo.png"
+                        src="../../assets/imgs/logo.png"
                         alt="Logo-Gumigems"
                         class="mb-4"
                     />

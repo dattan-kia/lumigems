@@ -1,5 +1,7 @@
 (function renderHeader() {
     const header = document.getElementById("header");
+    const cart = JSON.parse(localStorage.getItem("LUMIGEMS_CART")) ?? [];
+
     header.className = "bg-white py-2.5";
     const headerHTML = `  <div
                 class="container max-w-screen-xl mx-auto grid grid-cols-12 px-4"
@@ -15,7 +17,7 @@
                     <div class="flex items-center">
                         <a href="../index.html">
                             <img
-                                src="/assets/imgs/logo.png"
+                                src="../../assets/imgs/logo.png"
                                 alt="Logo"
                                 class="h-20"
                             />
@@ -35,7 +37,7 @@
                     <!-- Cart -->
                     <div class="relative">
                         <a
-                            href="#"
+                            href="../cart.html"
                             class="text-black hover:text-orange-500 flex items-center gap-4"
                         >
                             GIỎ HÀNG
@@ -56,7 +58,7 @@
                         </a>
                         <span
                             class="absolute -top-2 -right-2 bg-black text-white text-xs rounded-full w-5 h-5 flex items-center justify-center"
-                            >0</span
+                            >${cart.length}</span
                         >
                     </div>
                 </div>
@@ -69,7 +71,7 @@
                     <ul class="w-full grid grid-cols-6">
                         <li class="flex justify-center items-center">
                             <a
-                                href="./about.html"
+                                href="../about.html"
                                 class="w-full text-black hover:text-orange-500 px-4 py-2 flex justify-center items-center"
                                 >CÂU CHUYỆN</a
                             >
@@ -79,57 +81,19 @@
                             class="flex justify-center items-center relative group"
                         >
                             <a
-                                href="/products.html"
+                                href="../products.html"
                                 class="text-black hover:text-orange-500 flex items-center justify-center w-full px-4 py-2"
                                 >SẢN PHẨM
 
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    fill="none"
-                                    viewBox="0 0 24 24"
-                                    stroke-width="1.5"
-                                    stroke="currentColor"
-                                    class="size-4"
-                                >
-                                    <path
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        d="m19.5 8.25-7.5 7.5-7.5-7.5"
-                                    />
-                                </svg>
                             </a>
-                            <!-- Submenu -->
-                            <ul
-                                class="absolute left-0 top-full w-full bg-white border border-gray-200 shadow-lg rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 hidden group-hover:block"
-                            >
-                                <li class="flex justify-center items-center">
-                                    <a
-                                        href="#"
-                                        class="w-full px-4 py-2 text-black hover:bg-gray-100"
-                                        >SẢN PHẨM 1</a
-                                    >
-                                </li>
-                                <li class="flex justify-center items-center">
-                                    <a
-                                        href="#"
-                                        class="w-full px-4 py-2 text-black hover:bg-gray-100"
-                                        >SẢN PHẨM 2</a
-                                    >
-                                </li>
-                                <li class="flex justify-center items-center">
-                                    <a
-                                        href="#"
-                                        class="w-full px-4 py-2 text-black hover:bg-gray-100"
-                                        >SẢN PHẨM 3</a
-                                    >
-                                </li>
-                            </ul>
+                         
+                           
                         </li>
                         <li
                             class="flex justify-center items-center relative group"
                         >
                             <a
-                                href="/blogs/index.html"
+                                href="../../blogs/index.html"
                                 class="text-black hover:text-orange-500 flex items-center justify-center w-full px-4 py-2"
                                 >BLOGS
                                 <svg
@@ -149,18 +113,18 @@
                             </a>
                             <!-- Submenu -->
                             <ul
-                                class="absolute left-0 top-full w-full bg-white border border-gray-200 shadow-lg rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 hidden group-hover:block"
+                                class="absolute z-[99] left-0 top-full w-full bg-white border border-gray-200 shadow-lg rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 hidden group-hover:block"
                             >
                                 <li class="flex justify-center items-center">
                                     <a
-                                        href="/blogs/nhom-lua.html"
+                                        href="../../blogs/nhom-lua.html"
                                         class="w-full px-4 py-2 text-black hover:bg-gray-100"
                                         >NHÓM LỬA</a
                                     >
                                 </li>
                                 <li class="flex justify-center items-center">
                                     <a
-                                        href="/blogs/nhom-nuoc.html"
+                                        href="../../blogs/nhom-nuoc.html"
                                         class="w-full px-4 py-2 text-black hover:bg-gray-100"
                                         >NHÓM NƯỚC</a
                                     >
@@ -183,7 +147,7 @@
                         </li>
                         <li class="flex justify-center items-center">
                             <a
-                                href="./contact.html"
+                                href="../contact.html"
                                 class="w-full text-black hover:text-orange-500 px-4 py-2 flex justify-center items-center"
                                 >LIÊN HỆ</a
                             >

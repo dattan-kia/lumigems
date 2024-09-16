@@ -1,5 +1,4 @@
 import { blogs } from "./data.js";
-console.log({ blogs });
 
 const blogDom = document.getElementById("blog-grid");
 

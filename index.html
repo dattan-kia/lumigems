@@ -160,8 +160,8 @@
                     class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
                     id="popular-products"
                 >
-                    <!-- Item 1 -->
-                    <div class="p-4 rounded-lg popular-products-item">
+                    <!-- 
+                    <div class="p-4 rounded-lg  product-grid-item">
                         <div class="w-full aspect-square mb-4 border shadow-md">
                             <img
                                 src="./assets/imgs/products/V26/Vong_tay_Macrame_da_o_liu_(Peridot)_1.png"
@@ -172,15 +172,14 @@
                         <h3
                             class="text-xl font-semibold text-center text-black"
                         >
-                            VVòng tay Macrame Đá Ô liu (Peridot) 1
+                            Vòng tay Macrame Đá Ô liu (Peridot) 1
                         </h3>
                         <p class="text-center text-gray-900 font-bold mt-2">
                             325,000₫
                         </p>
                     </div>
 
-                    <!-- Item 2 -->
-                    <div class="p-4 rounded-lg popular-products-item">
+                    <div class="p-4 rounded-lg  product-grid-item">
                         <div class="w-full aspect-square mb-4 border shadow-md">
                             <img
                                 src="./assets/imgs/products/V43/Vòng tay Macrame Thạch anh kết hợp Peridot 3.JPG"
@@ -198,8 +197,7 @@
                         </p>
                     </div>
 
-                    <!-- Item 3 -->
-                    <div class="p-4 rounded-lg popular-products-item">
+                    <div class="p-4 rounded-lg  product-grid-item">
                         <div class="w-full aspect-square mb-4 border shadow-md">
                             <img
                                 src="./assets/imgs/products/V45/Vòng tay Macrame Đá Flourite.JPG"
@@ -216,6 +214,7 @@
                             550,000₫
                         </p>
                     </div>
+                 -->
                 </div>
             </div>
         </section>
@@ -234,7 +233,7 @@
                     id="newest-products"
                 >
                     <!-- Item 1 -->
-                    <div class="p-4 rounded-lg popular-products-item">
+                    <div class="p-4 rounded-lg product-grid-item">
                         <div class="w-full aspect-square mb-4 border shadow-md">
                             <img
                                 src="./assets/imgs/products/V24/Vòng tay Macrame Thạch anh trắng (Clear Quartz) 2.png"
@@ -253,7 +252,7 @@
                     </div>
 
                     <!-- Item 2 -->
-                    <div class="p-4 rounded-lg popular-products-item">
+                    <div class="p-4 rounded-lg product-grid-item">
                         <div class="w-full aspect-square mb-4 border shadow-md">
                             <img
                                 src="./assets/imgs/products/V25/Vòng tay Macrame Thạch anh tím (Amethyst) 3.png"
@@ -272,7 +271,7 @@
                     </div>
 
                     <!-- Item 3 -->
-                    <div class="p-4 rounded-lg popular-products-item">
+                    <div class="p-4 rounded-lg product-grid-item">
                         <div class="w-full aspect-square mb-4 border shadow-md">
                             <img
                                 src="./assets/imgs/products/V55/Vòng tay Macrame Thạch anh vàng (Citrine).jpg"
@@ -315,64 +314,7 @@
         <script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js"></script>
         <script src="./assets/js/render-header.js"></script>
         <script src="./assets/js/render-footer.js"></script>
-        <script type="module">
-            import products from "./data.js";
-
-            function renderTopProducts(products) {
-                // Sort products by priority in descending order
-                const sortedProducts = products.sort(
-                    (a, b) => b.priority - a.priority
-                );
-
-                // Get the top 3 products
-                const topProducts = sortedProducts.slice(0, 3);
-                // console.log({ topProducts });
-
-                const popularDOM = document.getElementById("popular-products");
-                const items = popularDOM.querySelectorAll(
-                    ".popular-products-item"
-                );
-                // render
-                items.forEach((item, index) =>
-                    renderItem(item, topProducts[index])
-                );
-            }
-            function renderNewestProducts(products) {
-                const sortedByDate = products.sort(
-                    (a, b) => new Date(b.createdAt) - new Date(a.createdAt)
-                );
-
-                // Get the top 3 products
-                const topNewestProducts = sortedByDate.slice(0, 3);
-                // console.log({ topNewestProducts });
-
-                const popularDOM = document.getElementById("newest-products");
-                const items = popularDOM.querySelectorAll(
-                    ".popular-products-item"
-                );
-                // render
-                items.forEach((item, index) =>
-                    renderItem(item, topNewestProducts[index])
-                );
-            }
-            function renderItem(dom, data) {
-                // console.log(data);
-
-                const imgTag = dom.getElementsByTagName("img")[0];
-                const nameTag = dom.getElementsByTagName("h3")[0];
-                const priceTag = dom.getElementsByTagName("p")[0];
-
-                imgTag.src = data.image;
-                nameTag.innerText = data.name;
-                priceTag.innerText = new Intl.NumberFormat("vn", {
-                    style: "currency",
-                    currency: "VND",
-                }).format(data.price);
-            }
-
-            renderTopProducts(products);
-            renderNewestProducts(products);
-        </script>
+        <script type="module" src="./assets/js/home.js"></script>
         <script type="module" src="./assets/js/render-blog-grid.js"></script>
     </body>
 </html>
