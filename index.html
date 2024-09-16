@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Lumigems</title>
+        <!-- <base href="/Lumigems/" /> -->
+
+        <link
+            href="./assets/fonts/Caveat/Caveat-VariableFont_wght.ttf"
+            rel="stylesheet"
+        />
+
+        <script src="https://cdn.tailwindcss.com"></script>
+        <style>
+            .font-caveat {
+                font-family: "Caveat", Arial !important;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Header -->
+        <header id="header"></header>
+
+        <!-- SLIDER -->
+        <div class="w-full mx-auto">
+            <div id="default-carousel" class="relative" data-carousel="static">
+                <!-- Carousel wrapper -->
+                <div
+                    class="overflow-hidden relative h-56 rounded-lg sm:h-64 xl:h-80 2xl:h-96"
+                >
+                    <!-- Item 1 -->
+                    <div
+                        class="hidden duration-700 ease-in-out"
+                        data-carousel-item
+                    >
+                        <span
+                            class="font-caveat absolute top-1/2 left-1/2 text-8xl font-semibold text-green-700 -translate-x-1/2 -translate-y-1/2"
+                            >LumiGems</span
+                        >
+                        <img
+                            src="./assets/imgs/bg-index.png"
+                            class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2"
+                            alt="..."
+                        />
+                    </div>
+                    <!-- Item 2 -->
+                    <div
+                        class="hidden duration-700 ease-in-out"
+                        data-carousel-item
+                    >
+                        <img
+                            src="https://flowbite.com/docs/images/carousel/carousel-2.svg"
+                            class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2"
+                            alt="..."
+                        />
+                    </div>
+                    <!-- Item 3 -->
+                    <div
+                        class="hidden duration-700 ease-in-out"
+                        data-carousel-item
+                    >
+                        <img
+                            src="https://flowbite.com/docs/images/carousel/carousel-3.svg"
+                            class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2"
+                            alt="..."
+                        />
+                    </div>
+                </div>
+                <!-- Slider indicators -->
+                <div
+                    class="flex absolute bottom-5 left-1/2 z-30 space-x-3 -translate-x-1/2"
+                >
+                    <button
+                        type="button"
+                        class="w-3 h-3 rounded-full"
+                        aria-current="false"
+                        aria-label="Slide 1"
+                        data-carousel-slide-to="0"
+                    ></button>
+                    <button
+                        type="button"
+                        class="w-3 h-3 rounded-full"
+                        aria-current="false"
+                        aria-label="Slide 2"
+                        data-carousel-slide-to="1"
+                    ></button>
+                    <button
+                        type="button"
+                        class="w-3 h-3 rounded-full"
+                        aria-current="false"
+                        aria-label="Slide 3"
+                        data-carousel-slide-to="2"
+                    ></button>
+                </div>
+                <!-- Slider controls -->
+                <button
+                    type="button"
+                    class="flex absolute top-0 left-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
+                    data-carousel-prev
+                >
+                    <span
+                        class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+                    >
+                        <svg
+                            class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M15 19l-7-7 7-7"
+                            ></path>
+                        </svg>
+                        <span class="hidden">Previous</span>
+                    </span>
+                </button>
+                <button
+                    type="button"
+                    class="flex absolute top-0 right-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
+                    data-carousel-next
+                >
+                    <span
+                        class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+                    >
+                        <svg
+                            class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M9 5l7 7-7 7"
+                            ></path>
+                        </svg>
+                        <span class="hidden">Next</span>
+                    </span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Section "Most popular" -->
+        <section class="py-8 bg-white">
+            <div class="container max-w-screen-xl mx-auto">
+                <!-- Section title -->
+                <h2 class="text-2xl font-bold text-center mb-8">
+                    SẢN PHẨM ĐƯỢC YÊU THÍCH NHẤT
+                </h2>
+
+                <!-- Grid layout -->
+                <div
+                    class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
+                    id="popular-products"
+                >
+                    <!-- Item 1 -->
+                    <div class="p-4 rounded-lg popular-products-item">
+                        <div class="w-full aspect-square mb-4 border shadow-md">
+                            <img
+                                src="./assets/imgs/products/V26/Vong_tay_Macrame_da_o_liu_(Peridot)_1.png"
+                                alt="VVòng tay Macrame Đá Ô liu (Peridot) 1"
+                                class="w-full h-full object-cover rounded-lg"
+                            />
+                        </div>
+                        <h3
+                            class="text-xl font-semibold text-center text-black"
+                        >
+                            VVòng tay Macrame Đá Ô liu (Peridot) 1
+                        </h3>
+                        <p class="text-center text-gray-900 font-bold mt-2">
+                            325,000₫
+                        </p>
+                    </div>
+
+                    <!-- Item 2 -->
+                    <div class="p-4 rounded-lg popular-products-item">
+                        <div class="w-full aspect-square mb-4 border shadow-md">
+                            <img
+                                src="./assets/imgs/products/V43/Vòng tay Macrame Thạch anh kết hợp Peridot 3.JPG"
+                                alt="Vòng tay Macrame Thạch anh kết hợp Peridot 3"
+                                class="w-full h-full object-cover rounded-lg"
+                            />
+                        </div>
+                        <h3
+                            class="text-xl font-semibold text-center text-black"
+                        >
+                            Vòng tay Macrame Thạch anh kết hợp Peridot 3
+                        </h3>
+                        <p class="text-center text-gray-900 font-bold mt-2">
+                            589,000₫
+                        </p>
+                    </div>
+
+                    <!-- Item 3 -->
+                    <div class="p-4 rounded-lg popular-products-item">
+                        <div class="w-full aspect-square mb-4 border shadow-md">
+                            <img
+                                src="./assets/imgs/products/V45/Vòng tay Macrame Đá Flourite.JPG"
+                                alt="Vòng tay Macrame Đá Flourite"
+                                class="w-full h-full object-cover rounded-lg"
+                            />
+                        </div>
+                        <h3
+                            class="text-xl font-semibold text-center text-black"
+                        >
+                            Vòng tay Macrame Đá Flourite
+                        </h3>
+                        <p class="text-center text-gray-900 font-bold mt-2">
+                            550,000₫
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section "New Products" -->
+        <section class="py-8 bg-white">
+            <div class="container max-w-screen-xl mx-auto">
+                <!-- Section title -->
+                <h2 class="text-2xl font-bold text-center mb-8">
+                    SẢN PHẨM MỚI
+                </h2>
+
+                <!-- Grid layout -->
+                <div
+                    class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
+                    id="newest-products"
+                >
+                    <!-- Item 1 -->
+                    <div class="p-4 rounded-lg popular-products-item">
+                        <div class="w-full aspect-square mb-4 border shadow-md">
+                            <img
+                                src="./assets/imgs/products/V24/Vòng tay Macrame Thạch anh trắng (Clear Quartz) 2.png"
+                                alt="Vòng tay Macrame Thạch anh trắng (Clear Quartz)"
+                                class="w-full h-full object-cover rounded-lg"
+                            />
+                        </div>
+                        <h3
+                            class="text-xl font-semibold text-center text-black"
+                        >
+                            Vòng tay Macrame Thạch anh trắng (Clear Quartz)
+                        </h3>
+                        <p class="text-center text-gray-900 font-bold mt-2">
+                            325,000₫
+                        </p>
+                    </div>
+
+                    <!-- Item 2 -->
+                    <div class="p-4 rounded-lg popular-products-item">
+                        <div class="w-full aspect-square mb-4 border shadow-md">
+                            <img
+                                src="./assets/imgs/products/V25/Vòng tay Macrame Thạch anh tím (Amethyst) 3.png"
+                                alt="Vòng tay Macrame Thạch anh tím (Amethyst) 3"
+                                class="w-full h-full object-cover rounded-lg"
+                            />
+                        </div>
+                        <h3
+                            class="text-xl font-semibold text-center text-black"
+                        >
+                            Vòng tay Macrame Thạch anh tím (Amethyst) 3
+                        </h3>
+                        <p class="text-center text-gray-900 font-bold mt-2">
+                            589,000₫
+                        </p>
+                    </div>
+
+                    <!-- Item 3 -->
+                    <div class="p-4 rounded-lg popular-products-item">
+                        <div class="w-full aspect-square mb-4 border shadow-md">
+                            <img
+                                src="./assets/imgs/products/V55/Vòng tay Macrame Thạch anh vàng (Citrine).jpg"
+                                alt="Vòng tay Macrame Thạch anh vàng (Citrine)"
+                                class="w-full h-full object-cover rounded-lg"
+                            />
+                        </div>
+                        <h3
+                            class="text-xl font-semibold text-center text-black"
+                        >
+                            Vòng tay Macrame Thạch anh vàng (Citrine)
+                        </h3>
+                        <p class="text-center text-gray-900 font-bold mt-2">
+                            550,000₫
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section "FIND YOURS" -->
+        <section class="py-8 bg-white">
+            <div class="container max-w-screen-xl mx-auto">
+                <!-- Section title -->
+                <h2 class="text-2xl font-bold text-center mb-8">
+                    TÌM KIẾM VIÊN ĐÁ DÀNH CHO BẠN
+                </h2>
+
+                <!-- Grid layout -->
+                <div
+                    class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"
+                    id="blog-grid"
+                ></div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer id="footer"></footer>
+
+        <script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js"></script>
+        <script src="./assets/js/render-header.js"></script>
+        <script src="./assets/js/render-footer.js"></script>
+        <script type="module">
+            import products from "./data.js";
+
+            function renderTopProducts(products) {
+                // Sort products by priority in descending order
+                const sortedProducts = products.sort(
+                    (a, b) => b.priority - a.priority
+                );
+
+                // Get the top 3 products
+                const topProducts = sortedProducts.slice(0, 3);
+                // console.log({ topProducts });
+
+                const popularDOM = document.getElementById("popular-products");
+                const items = popularDOM.querySelectorAll(
+                    ".popular-products-item"
+                );
+                // render
+                items.forEach((item, index) =>
+                    renderItem(item, topProducts[index])
+                );
+            }
+            function renderNewestProducts(products) {
+                const sortedByDate = products.sort(
+                    (a, b) => new Date(b.createdAt) - new Date(a.createdAt)
+                );
+
+                // Get the top 3 products
+                const topNewestProducts = sortedByDate.slice(0, 3);
+                // console.log({ topNewestProducts });
+
+                const popularDOM = document.getElementById("newest-products");
+                const items = popularDOM.querySelectorAll(
+                    ".popular-products-item"
+                );
+                // render
+                items.forEach((item, index) =>
+                    renderItem(item, topNewestProducts[index])
+                );
+            }
+            function renderItem(dom, data) {
+                // console.log(data);
+
+                const imgTag = dom.getElementsByTagName("img")[0];
+                const nameTag = dom.getElementsByTagName("h3")[0];
+                const priceTag = dom.getElementsByTagName("p")[0];
+
+                imgTag.src = data.image;
+                nameTag.innerText = data.name;
+                priceTag.innerText = new Intl.NumberFormat("vn", {
+                    style: "currency",
+                    currency: "VND",
+                }).format(data.price);
+            }
+
+            renderTopProducts(products);
+            renderNewestProducts(products);
+        </script>
+        <script type="module" src="./assets/js/render-blog-grid.js"></script>
+    </body>
+</html>
