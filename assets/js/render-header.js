@@ -4,12 +4,19 @@
 
     header.className = "bg-white py-2.5";
     const headerHTML = `  <div
-                class="container max-w-screen-xl mx-auto grid grid-cols-12 px-4"
+                class="container  xl:max-w-screen-xl  mx-auto grid grid-cols-12 px-4"
             >
                 <div class="col-span-5 flex items-center justify-start">
-                    <p class="text-black text-sm font-semibold">
+                    <p class="text-black text-sm font-semibold hidden md:block">
                         HOTLINE: <span class="text-orange-500">0343854597</span>
                     </p>
+                    <div class="block md:hidden" id="menu-button">
+                        <button >
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                            </svg>
+                        </button>
+                    </div>
                 </div>
 
                 <div class="col-span-2 flex items-center justify-center">
@@ -40,7 +47,7 @@
                             href="../../../lumigems/cart.html"
                             class="text-black hover:text-orange-500 flex items-center gap-4"
                         >
-                            GIỎ HÀNG
+                          <span class="hidden md:inline-block">GIỎ HÀNG</span>
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 fill="none"
@@ -64,15 +71,15 @@
                 </div>
             </div>
             <!-- Menu -->
-            <div class="bg-white shadow-sm">
+            <div class="bg-white shadow-sm md:block hidden">
                 <nav
-                    class="flex container max-w-screen-xl mx-auto justify-between items-center px-4"
+                    class="flex container  xl:max-w-screen-xl  mx-auto justify-between items-center px-4"
                 >
                     <ul class="w-full grid grid-cols-6">
                         <li class="flex justify-center items-center">
                             <a
                                 href="../../../lumigems/about.html"
-                                class="w-full text-black hover:text-orange-500 px-4 py-2 flex justify-center items-center"
+                                class="w-full text-black hover:text-orange-500 px-2 py-1 lg:px-4 lg:py-2 flex justify-center items-center"
                                 >CÂU CHUYỆN</a
                             >
                         </li>
@@ -82,7 +89,7 @@
                         >
                             <a
                                 href="../../../lumigems/products.html"
-                                class="text-black hover:text-orange-500 flex items-center justify-center w-full px-4 py-2"
+                                class="text-black hover:text-orange-500 flex items-center justify-center w-full px-2 py-1 lg:px-4 lg:py-2"
                                 >SẢN PHẨM
 
                             </a>
@@ -94,7 +101,7 @@
                         >
                             <a
                                 href="../../../lumigems/blogs/index.html"
-                                class="text-black hover:text-orange-500 flex items-center justify-center w-full px-4 py-2"
+                                class="text-black hover:text-orange-500 flex items-center justify-center w-full px-2 py-1 lg:px-4 lg:py-2"
                                 >BLOGS
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
@@ -118,14 +125,14 @@
                                 <li class="flex justify-center items-center">
                                     <a
                                         href="../../../lumigems/blogs/nhom-lua.html"
-                                        class="w-full px-4 py-2 text-black hover:bg-gray-100"
+                                        class="w-full px-2 py-1 lg:px-4 lg:py-2 text-black hover:bg-gray-100"
                                         >NHÓM LỬA</a
                                     >
                                 </li>
                                 <li class="flex justify-center items-center">
                                     <a
                                         href="../../../lumigems/blogs/nhom-nuoc.html"
-                                        class="w-full px-4 py-2 text-black hover:bg-gray-100"
+                                        class="w-full px-2 py-1 lg:px-4 lg:py-2 text-black hover:bg-gray-100"
                                         >NHÓM NƯỚC</a
                                     >
                                 </li>
@@ -134,26 +141,74 @@
                         <li class="flex justify-center items-center">
                             <a
                                 href="#"
-                                class="w-full text-black hover:text-orange-500 px-4 py-2 flex justify-center items-center"
+                                class="w-full text-black hover:text-orange-500 px-2 py-1 lg:px-4 lg:py-2 flex justify-center items-center"
                                 >CHÍNH SÁCH</a
                             >
                         </li>
                         <li class="flex justify-center items-center">
                             <a
                                 href="#"
-                                class="w-full text-black hover:text-orange-500 px-4 py-2 flex justify-center items-center"
+                                class="w-full text-black hover:text-orange-500 px-2 py-1 lg:px-4 lg:py-2 flex justify-center items-center"
                                 >ĐIỀU KHOẢN</a
                             >
                         </li>
                         <li class="flex justify-center items-center">
                             <a
                                 href="../../../lumigems/contact.html"
-                                class="w-full text-black hover:text-orange-500 px-4 py-2 flex justify-center items-center"
+                                class="w-full text-black hover:text-orange-500 px-2 py-1 lg:px-4 lg:py-2 flex justify-center items-center"
                                 >LIÊN HỆ</a
                             >
                         </li>
                     </ul>
                 </nav>
-            </div>`;
+            </div>
+            <!-- Mobile Menu -->
+<div id="mobile-menu" class="bg-white shadow-sm md:hidden hidden transition-all duration-500 transform origin-top">
+  <nav
+    class="flex container xl:max-w-screen-xl mx-auto justify-between items-center px-4"
+  >
+    <ul class="w-full grid grid-cols-1 gap-2">
+      <li class="flex justify-center items-center">
+        <a href="../../../lumigems/about.html" class="w-full text-black hover:text-orange-500 px-4 py-2">
+          CÂU CHUYỆN
+        </a>
+      </li>
+      <li class="flex justify-center items-center">
+        <a href="../../../lumigems/products.html" class="w-full text-black hover:text-orange-500 px-4 py-2">
+          SẢN PHẨM
+        </a>
+      </li>
+      <li class="flex justify-center items-center">
+        <a href="../../../lumigems/blogs/index.html" class="w-full text-black hover:text-orange-500 px-4 py-2">
+          BLOGS
+        </a>
+      </li>
+      <li class="flex justify-center items-center">
+        <a href="#" class="w-full text-black hover:text-orange-500 px-4 py-2">
+          CHÍNH SÁCH
+        </a>
+      </li>
+      <li class="flex justify-center items-center">
+        <a href="#" class="w-full text-black hover:text-orange-500 px-4 py-2">
+          ĐIỀU KHOẢN
+        </a>
+      </li>
+      <li class="flex justify-center items-center">
+        <a href="../../../lumigems/contact.html" class="w-full text-black hover:text-orange-500 px-4 py-2">
+          LIÊN HỆ
+        </a>
+      </li>
+    </ul>
+  </nav>
+</div>
+            `;
     header.innerHTML = headerHTML;
 })();
+
+const menuButton = document.getElementById("menu-button");
+const mobileMenu = document.getElementById("mobile-menu");
+
+menuButton.addEventListener("click", () => {
+    mobileMenu.classList.toggle("hidden");
+    mobileMenu.classList.toggle("animate-slide-down"); // Trigger the slide-down animation
+});

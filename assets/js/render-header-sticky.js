@@ -4,7 +4,15 @@ headerDom.className =
 headerDom.innerHTML = `
 <div class="container mx-auto flex justify-between items-center">
                 <!-- Logo -->
-                <a class="flex items-center space-x-2" href="../index.html">
+
+                <div class="block md:hidden" id="menu-button">
+                        <button >
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                            </svg>
+                        </button>
+                    </div>
+                <a class="flex items-center space-x-2" href="../../../lumigems/index.html">
                     <img
                         src="../../../lumigems/assets/imgs/logo.png"
                         alt="Logo"
@@ -14,7 +22,7 @@ headerDom.innerHTML = `
                 </a>
 
                 <!-- Navigation -->
-                <nav class="flex items-center justify-end gap-4">
+                <nav class="md:flex items-center justify-end gap-4 hidden">
                     <ul class="flex items-center justify-end gap-4">
                         <li
                             class="flex justify-center items-center relative group"
@@ -96,7 +104,7 @@ headerDom.innerHTML = `
                         </li>
                     </ul>
 
-                    <button class="flex justify-center items-center">
+                    <button class="md:flex justify-center items-center hidden ">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             fill="none"
@@ -114,4 +122,46 @@ headerDom.innerHTML = `
                     </button>
                 </nav>
             </div>
+            <!-- Mobile Menu (Hidden by default) -->
+<div
+  id="mobile-menu"
+  class="bg-white shadow-sm md:hidden hidden transition-all duration-500 transform origin-top"
+>
+  <ul class="grid grid-cols-1 gap-2">
+    <li class="flex justify-center items-center">
+      <a href="../../../lumigems/index.html" class="w-full text-black hover:text-orange-500 px-4 py-2">
+        Trang chủ
+      </a>
+    </li>
+    <li class="flex justify-center items-center">
+      <a href="../../../lumigems/products.html" class="w-full text-black hover:text-orange-500 px-4 py-2">
+        Sản phẩm
+      </a>
+    </li>
+    <li class="flex justify-center items-center">
+      <a href="../../../lumigems/blogs/index.html" class="w-full text-black hover:text-orange-500 px-4 py-2">
+        Blogs
+      </a>
+    </li>
+    <li class="flex justify-center items-center">
+      <a href="../../../lumigems/cart.html" class="w-full text-black hover:text-orange-500 px-4 py-2">
+        Giỏ hàng
+      </a>
+    </li>
+    <li class="flex justify-center items-center">
+      <a href="#" class="w-full text-black hover:text-orange-500 px-4 py-2">
+        Tài khoản
+      </a>
+    </li>
+  </ul>
+</div>
+
 `;
+
+const menuButton = document.getElementById("menu-button");
+const mobileMenu = document.getElementById("mobile-menu");
+
+menuButton.addEventListener("click", () => {
+    mobileMenu.classList.toggle("hidden"); // Show/Hide the mobile menu
+    mobileMenu.classList.toggle("animate-slide-down"); // Trigger the slide-down animation
+});

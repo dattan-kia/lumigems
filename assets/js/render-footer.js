@@ -3,7 +3,7 @@
     footer.className = "bg-gray-100 py-10";
     const footerHTML = `
      <div
-                class="container max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8"
+                class="container px-4  xl:max-w-screen-xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-8"
             >
                 <!-- Company Info -->
                 <div class="col-span-1">
@@ -92,7 +92,7 @@
                         </li>
                         <li>
                             <a
-                                href="#"
+                                href="../../../lumigems/products.html"
                                 class="hover:text-gray-900 hover:underline"
                                 >SẢN PHẨM</a
                             >

@@ -12,7 +12,7 @@
         <header id="header"></header>
 
         <!-- breadcumbs -->
-        <section class="container max-w-screen-xl mx-auto py-2.5 mb-4">
+        <section class="container px-4 xl:max-w-screen-xl mx-auto py-2.5 mb-4">
             <nav class="flex" aria-label="Breadcrumb">
                 <ol
                     class="inline-flex items-center space-x-1 md:space-x-2 rtl:space-x-reverse"
@@ -65,11 +65,13 @@
         </section>
 
         <!-- Products -->
-        <section class="py-8">
-            <div class="container max-w-screen-xl mx-auto p-4 grid grid-cols-5">
+        <section class="py-4 sm:py-8">
+            <div
+                class="container px-4 xl:max-w-screen-xl mx-auto p-4 grid grid-cols-1 sm:grid-cols-4 lg:grid-cols-5 gap-4"
+            >
                 <!-- Filters Section -->
                 <!-- Filters -->
-                <aside class="col-span-1 p-4">
+                <aside class="col-span-1">
                     <h3 class="text-lg font-semibold mb-4">Filters</h3>
                     <div>
                         <h4 class="font-medium mb-2">Mức giá</h4>
@@ -133,7 +135,7 @@
                 </aside>
 
                 <!-- Products Section -->
-                <div class="col-span-4 p-4">
+                <div class="grid-col-1 sm:col-span-3 lg:col-span-4">
                     <!-- Sorting Options -->
                     <div class="mb-6">
                         <h4 class="font-medium mb-4">Xếp theo:</h4>
@@ -175,7 +177,7 @@
 
                     <!-- Product Grid -->
                     <div
-                        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"
+                        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4"
                         id="product-grid"
                     ></div>
                 </div>

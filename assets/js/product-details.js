@@ -171,7 +171,7 @@ placeOrderBtn.addEventListener("click", function () {
         text: "Place order successfully",
         duration: 3000,
         close: true,
-        destination: "/cart.html",
+        destination: "../../../lumigems/cart.html",
         gravity: "top",
         position: "right",
         stopOnFocus: true,

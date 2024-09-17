@@ -375,15 +375,15 @@ export default products;
 
 const blogs = [
     {
-        url: "../blogs/nhom-nuoc.html",
-        image: "../assets/imgs/blogs/Đá Phong Thủy Hợp Với Các Cung Hoàng Đạo Nhóm Lửa.png",
+        url: "../../../lumigems/blogs/nhom-nuoc.html",
+        image: "../../../lumigems/assets/imgs/blogs/Đá Phong Thủy Hợp Với Các Cung Hoàng Đạo Nhóm Lửa.png",
         title: "Đá Năng Lượng Hợp Với Các Cung Hoàng Đạo Nhóm Nước: Bọ Cap, Cự Giải, Song Ngư",
         description:
             "Nhóm Nước bao gồm Bọ Cap, Cự Giải, Song Ngư – những cung hoàng đạo",
     },
     {
-        url: "../blogs/nhom-lua.html",
-        image: "../assets/imgs/blogs/Đá Phong Thủy Hợp Với Các Cung Hoàng Đạo Nhóm Lửa (1).png",
+        url: "../../../lumigems/blogs/nhom-lua.html",
+        image: "../../../lumigems/assets/imgs/blogs/Đá Phong Thủy Hợp Với Các Cung Hoàng Đạo Nhóm Lửa (1).png",
         title: "Đá Năng Lượng Hợp Với Các Cung Hoàng Đạo Nhóm Lửa: Bạch Dương, Sư Tử, Nhân Mã",
         description:
             "Nhóm Lửa bao gồm Bạch Dương, Sư Tử và Nhân Mã – những cung hoàng đạo",

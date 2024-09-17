@@ -81,8 +81,8 @@ function renderCartItems() {
         });
         // render cart
         cartDOM.innerHTML = ` 
-        <div class="container mx-auto grid grid-cols-4 gap-8">
-            <div class="col-span-3">
+        <div class="container mx-auto grid grid-col-1 lg:grid-cols-4 gap-4 lg:gap-8">
+            <div class="lg:col-span-3 col-span-1">
                 <!-- Cart Items -->
             ${cartItemsDom}
             </div>
