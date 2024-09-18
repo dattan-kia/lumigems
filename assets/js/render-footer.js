@@ -129,47 +129,41 @@
                         </li>
                         <li>
                             <a
-                                href="#"
+                                href="../../../lumigems/terms&conditions.html"
                                 class="hover:text-gray-900 hover:underline"
                                 >ĐIỀU KHOẢN DỊCH VỤ</a
                             >
                         </li>
                         <li>
                             <a
-                                href="#"
+                                href="../../../lumigems/privacy-policy.html"
                                 class="hover:text-gray-900 hover:underline"
                                 >CHÍNH SÁCH BẢO MẬT</a
                             >
                         </li>
                         <li>
                             <a
-                                href="#"
+                                href="../../../lumigems/return-policy.html"
                                 class="hover:text-gray-900 hover:underline"
                                 >CHÍNH SÁCH ĐỔI TRẢ</a
                             >
                         </li>
                     </ul>
                     <div class="flex justify-start items-center gap-4">
-                        <!-- <button
-                            class="w-8 h-8 rounded-full bg-black flex justify-center items-center"
-                        >
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="20"
-                                height="20"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="currentColor"
-                                stroke-width="1"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                class="lucide lucide-facebook text-white"
+                        <a href="https://www.facebook.com/profile.php?id=61565143884195&mibextid=LQQJ4d" target="_black">
+                            <button
+                                class="w-8 h-8 rounded-full  flex justify-center items-center"
                             >
-                                <path
-                                    d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
-                                />
-                            </svg>
-                        </button> -->
+                                <img src="../../../lumigems/assets/imgs/facebook-logo.png" alt="facebook-logo"/>
+                            </button> 
+                        </a>
+                        <a href="https://s.net.vn/whr1?fbclid=IwZXh0bgNhZW0CMTAAAR0UV5NLUrja8PA-2XmANCpCyLq1NhnzR5pKP-eNem74BKUfVwF2H5uZFz0_aem_6eRMw1q33a30lXH38q6IGA" target="_black">
+                            <button
+                                class="w-8 h-8 rounded-full  flex justify-center items-center"
+                            >
+                                <img src="../../../lumigems/assets/imgs/tiktok-logo.png" alt="tiktok-logo"/>
+                            </button> 
+                        </a>
                     </div>
                 </div>
 

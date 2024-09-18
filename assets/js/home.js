@@ -32,7 +32,7 @@ function generateProductItem(products) {
                                     product.image
                                 }" alt="Product Image">
                                 <div class="p-4">
-                                    <h3 class="text-md font-semibold line-clamp-2">${
+                                    <h3 class="text-md font-semibold line-clamp-1">${
                                         product.name
                                     }</h3>
                                     <p class="text-gray-900 font-bold">${new Intl.NumberFormat(

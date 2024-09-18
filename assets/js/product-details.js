@@ -96,7 +96,7 @@ function renderProductDetails() {
             class="bg-black text-white px-6 py-3 rounded-lg font-semibold w-full"
             id="place-order-button"
         >
-            MUA NGAY
+            THÊM VÀO GIỎ HÀNG
         </button>
 
         <!-- Additional Info -->
