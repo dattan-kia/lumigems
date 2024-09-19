@@ -1,9 +1,18 @@
 import products from "./data.js";
-const currentProductID = JSON.parse(
-    localStorage.getItem("LUMIGEMS_CURRENT_PRODUCT_ID")
-);
-const carts = JSON.parse(localStorage.getItem("LUMIGEMS_CART")) ?? [];
+
+function setCurrentProduct(productId) {
+    console.log(productId);
+
+    localStorage.setItem(
+        "LUMIGEMS_CURRENT_PRODUCT_ID",
+        JSON.stringify(productId)
+    );
+    renderProductDetails();
+}
 function renderProductDetails() {
+    const currentProductID = JSON.parse(
+        localStorage.getItem("LUMIGEMS_CURRENT_PRODUCT_ID")
+    );
     const currentProduct = products.find(
         (product) => product.id === currentProductID
     );
@@ -12,16 +21,42 @@ function renderProductDetails() {
         console.log("Product not found");
         return;
     }
+
+    const productVariants = products.filter(
+        (product) =>
+            product.parentId === currentProduct.parentId &&
+            product.id !== currentProduct.id
+    );
+
+    let productVariantsDom = "";
+    productVariants.forEach((variant) => {
+        productVariantsDom += `
+            <button class="w-1/4 sm:w-1/2  lg:w-1/4 flex-shrink-0 flex justify-center aspect-square overflow-hidden variant-button" data-variant-id="${variant.id}" >
+                <img src="${variant.image}" alt="${variant.name}"
+                  class="w-full h-full object-cover rounded-lg shadow-md"
+                />
+            </button>
+
+        `;
+    });
+
     const dom = document.getElementById("product-details");
     dom.innerHTML = `
      <!-- Product Image -->
-    <div class="flex justify-center aspect-square">
-        <img
-            src="${currentProduct.image}"
-            alt="${currentProduct.name}"
-            class="w-full h-auto object-cover rounded-lg shadow-md"
-        />
-    </div>
+     <div class="flex flex-col gap-4">
+        <div class="flex justify-center aspect-square overflow-hidden">
+            <img
+                src="${currentProduct.image}"
+                alt="${currentProduct.name}"
+                class="w-full h-full object-cover rounded-lg shadow-md "
+            />
+        </div>
+        <div class="w-full overflow-x-auto custom-scrollbar pb-2">
+            <div class="flex gap-4 " id="product-variants">
+                ${productVariantsDom}
+            </div>
+        </div>
+     </div>
 
     <!-- Product Details -->
     <div>
@@ -122,61 +157,83 @@ function renderProductDetails() {
         </div>
     </div>
     `;
+    handler();
 }
 renderProductDetails();
 
-// Select the buttons and input
-const decreaseBtn = document.getElementById("decrease");
-const increaseBtn = document.getElementById("increase");
-const quantityInput = document.getElementById("quantity");
-const placeOrderBtn = document.getElementById("place-order-button");
-// Initial quantity value
-let quantity = 1;
-
-// Function to update the quantity value in the input field
-function updateQuantity() {
-    quantityInput.value = quantity;
-}
-
-// Decrease quantity
-decreaseBtn.addEventListener("click", function () {
-    if (quantity > 1) {
-        quantity--;
-        updateQuantity();
-    }
-});
-
-// Increase quantity
-increaseBtn.addEventListener("click", function () {
-    quantity++;
-    updateQuantity();
-});
-
-placeOrderBtn.addEventListener("click", function () {
-    const isOrdered = carts.find(
-        (order) => order.productId === currentProductID
+function handler() {
+    const currentProductID = JSON.parse(
+        localStorage.getItem("LUMIGEMS_CURRENT_PRODUCT_ID")
     );
-    if (isOrdered) {
-        const newCart = carts.map((order) =>
-            order.productId === currentProductID
-                ? { ...order, quantity: order.quantity + quantity }
-                : order
-        );
-        localStorage.setItem("LUMIGEMS_CART", JSON.stringify(newCart));
-    } else {
-        const newCart = [...carts, { quantity, productId: currentProductID }];
-        localStorage.setItem("LUMIGEMS_CART", JSON.stringify(newCart));
+    const carts = JSON.parse(localStorage.getItem("LUMIGEMS_CART")) ?? [];
+
+    // Select the buttons and input
+    const decreaseBtn = document.getElementById("decrease");
+    const increaseBtn = document.getElementById("increase");
+    const quantityInput = document.getElementById("quantity");
+    const placeOrderBtn = document.getElementById("place-order-button");
+    const variantBtns = document.querySelectorAll(".variant-button");
+
+    // Initial quantity value
+    let quantity = 1;
+
+    // Function to update the quantity value in the input field
+    function updateQuantity() {
+        quantityInput.value = quantity;
     }
-    Toastify({
-        text: "Place order successfully",
-        duration: 3000,
-        close: true,
-        destination: "../../../lumigems/cart.html",
-        gravity: "top",
-        position: "right",
-        stopOnFocus: true,
-        style: {
-            background: "linear-gradient(to right, #00b09b, #96c93d)",
-        },
-    }).showToast();
-});
+
+    // Decrease quantity
+    decreaseBtn.addEventListener("click", function () {
+        if (quantity > 1) {
+            quantity--;
+            updateQuantity();
+        }
+    });
+
+    // Increase quantity
+    increaseBtn.addEventListener("click", function () {
+        quantity++;
+        updateQuantity();
+    });
+
+    // place order
+    placeOrderBtn.addEventListener("click", function () {
+        const isOrdered = carts.find(
+            (order) => order.productId === currentProductID
+        );
+        if (isOrdered) {
+            const newCart = carts.map((order) =>
+                order.productId === currentProductID
+                    ? { ...order, quantity: order.quantity + quantity }
+                    : order
+            );
+            localStorage.setItem("LUMIGEMS_CART", JSON.stringify(newCart));
+        } else {
+            const newCart = [
+                ...carts,
+                { quantity, productId: currentProductID },
+            ];
+            localStorage.setItem("LUMIGEMS_CART", JSON.stringify(newCart));
+        }
+        Toastify({
+            text: "Place order successfully",
+            duration: 3000,
+            close: true,
+            destination: "../../../lumigems/cart.html",
+            gravity: "top",
+            position: "right",
+            stopOnFocus: true,
+            style: {
+                background: "linear-gradient(to right, #00b09b, #96c93d)",
+            },
+        }).showToast();
+    });
+
+    variantBtns.forEach((variantBtn) => {
+        variantBtn.addEventListener("click", () => {
+            const variantId = variantBtn.dataset.variantId;
+            if (!variantId) return;
+            setCurrentProduct(variantId);
+        });
+    });
+}

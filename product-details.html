@@ -17,6 +17,27 @@
             type="text/javascript"
             src="https://cdn.jsdelivr.net/npm/toastify-js"
         ></script>
+
+        <style>
+            /* Custom scrollbar styles */
+            /* Firefox */
+            .custom-scrollbar {
+                scrollbar-width: thin;
+                scrollbar-color: #000 #cbd5e0; /* Thumb color and track color */
+            }
+
+            /* Webkit (Chrome, Safari) */
+            .custom-scrollbar::-webkit-scrollbar {
+                height: 8px; /* Horizontal scrollbar height */
+            }
+            .custom-scrollbar::-webkit-scrollbar-track {
+                background-color: #cbd5e0; /* Track color */
+            }
+            .custom-scrollbar::-webkit-scrollbar-thumb {
+                background-color: #000; /* Thumb color */
+                border-radius: 4px;
+            }
+        </style>
     </head>
     <body>
         <!-- Header -->
@@ -110,7 +131,6 @@
         <footer id="footer"></footer>
         <script src="./assets/js/render-header.js"></script>
         <script src="./assets/js/render-footer.js"></script>
-        <script src="/data.js"></script>
         <script type="module" src="./assets/js/product-details.js"></script>
     </body>
 </html>
