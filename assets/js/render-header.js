@@ -109,7 +109,7 @@
                                     viewBox="0 0 24 24"
                                     stroke-width="1.5"
                                     stroke="currentColor"
-                                    class="size-4"
+                                    class="size-4 ml-2"
                                 >
                                     <path
                                         stroke-linecap="round"
@@ -138,16 +138,51 @@
                                 </li>
                             </ul>
                         </li>
-                        <li class="flex justify-center items-center">
+                        <li class="flex justify-center items-center group relative">
                             <a
                                 href="#"
                                 class="w-full text-black hover:text-orange-500 px-2 py-1 lg:px-4 lg:py-2 flex justify-center items-center"
-                                >CHÍNH SÁCH</a
+                                >CHÍNH SÁCH
+                                 <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke-width="1.5"
+                                    stroke="currentColor"
+                                    class="size-4 ml-2"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        d="m19.5 8.25-7.5 7.5-7.5-7.5"
+                                    />
+                                </svg>
+                                </a
                             >
+                            
+                            <!-- Submenu -->
+                            <ul
+                                class="absolute z-[99] left-0 top-full w-full bg-white border border-gray-200 shadow-lg rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 hidden group-hover:block"
+                            >
+                                <li class="flex justify-center items-center">
+                                    <a
+                                        href="../../../lumigems/privacy-policy.html"
+                                        class="w-full px-2 py-1 lg:px-4 lg:py-2 text-black hover:bg-gray-100"
+                                        >CHÍNH SÁCH BẢO MẬT</a
+                                    >
+                                </li>
+                                <li class="flex justify-center items-center">
+                                    <a
+                                        href="../../../lumigems/return-policy.html"
+                                        class="w-full px-2 py-1 lg:px-4 lg:py-2 text-black hover:bg-gray-100"
+                                        >CHÍNH SÁCH ĐỔI TRẢ</a
+                                    >
+                                </li>
+                            </ul>
                         </li>
                         <li class="flex justify-center items-center">
                             <a
-                                href="#"
+                                href="../../../lumigems/terms&conditions.html"
                                 class="w-full text-black hover:text-orange-500 px-2 py-1 lg:px-4 lg:py-2 flex justify-center items-center"
                                 >ĐIỀU KHOẢN</a
                             >
