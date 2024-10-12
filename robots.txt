@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /cart
+Disallow: /privacy-policy
+Disallow: /return-policy
+Disallow: /terms-conditions
+
+
+Sitemap: https://dattan-kia.github.io/lumigems/sitemap.xml
