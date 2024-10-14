@@ -173,7 +173,7 @@ renderTotalsCart();
 function handleListener() {
     const cartItems = document.querySelectorAll(".cart-item");
 
-    console.log(cartItems);
+    // console.log(cartItems);
 
     // Add event listeners for each cart item
     cartItems.forEach((item) => {
@@ -192,14 +192,14 @@ function handleListener() {
             let quantity = parseInt(quantityInput.value);
             quantity++;
             quantityInput.value = quantity;
-            console.log("cart", cart);
+            // console.log("cart", cart);
 
             const newCart = cart.map((item) =>
                 item.productId === productId
                     ? { ...item, quantity: quantity }
                     : item
             );
-            console.log("new cart", newCart);
+            // console.log("new cart", newCart);
 
             localStorage.setItem("LUMIGEMS_CART", JSON.stringify(newCart));
 
@@ -220,7 +220,7 @@ function handleListener() {
                         ? { ...item, quantity: quantity }
                         : item
                 );
-                console.log("new cart", newCart);
+                // console.log("new cart", newCart);
 
                 localStorage.setItem("LUMIGEMS_CART", JSON.stringify(newCart));
                 renderTotalsCart();

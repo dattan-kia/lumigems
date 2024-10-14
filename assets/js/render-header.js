@@ -37,7 +37,7 @@
 
                 <div class="col-span-5 flex items-center justify-end space-x-6">
                     <!-- Account -->
-                    <a href="#" class="text-black hover:text-orange-500"
+                    <a href="#" class="text-black hover:text-orange-500 hidden md:block"
                         >TÀI KHOẢN</a
                     >
 

@@ -1,5 +1,14 @@
 import products from "./data.js";
 
+const groupedProducts = Object.values(
+    products.reduce((acc, product) => {
+        if (!acc[product.parentId]) {
+            acc[product.parentId] = product;
+        }
+        return acc;
+    }, {})
+);
+
 function renderProductGrid(filteredProducts) {
     const productGrid = document.getElementById("product-grid");
     productGrid.innerHTML = ""; // Clear previous products
@@ -35,7 +44,7 @@ function renderProductGrid(filteredProducts) {
         productGrid.innerHTML += productCard;
     });
 }
-renderProductGrid(products);
+renderProductGrid(groupedProducts);
 
 const items = document.querySelectorAll(".product-grid-item");
 items.forEach((item) => {
@@ -72,8 +81,8 @@ function filterProducts() {
     // Filter products by price
     let filteredProducts =
         selectedRanges.length === 0
-            ? products
-            : products.filter((product) => {
+            ? groupedProducts
+            : groupedProducts.filter((product) => {
                   return selectedRanges.some((range) => {
                       const [minPrice, maxPrice] = range.split("-").map(Number);
                       return (

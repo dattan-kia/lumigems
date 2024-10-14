@@ -41,7 +41,7 @@ document
     });
 function validateName() {
     const name = document.getElementById("full-name").value.trim();
-    console.log("Valid name: " + name);
+    // console.log("Valid name: " + name);
 
     if (name !== "") {
         document.getElementById("nameError").classList.add("hidden");
@@ -54,7 +54,7 @@ function validateName() {
 
 function validateEmail() {
     const email = document.getElementById("email").value.trim();
-    console.log("email", email);
+    // console.log("email", email);
 
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (email !== "" && emailPattern.test(email)) {

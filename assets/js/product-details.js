@@ -1,7 +1,7 @@
 import products from "./data.js";
 
 function setCurrentProduct(productId) {
-    console.log(productId);
+    // console.log(productId);
 
     localStorage.setItem(
         "LUMIGEMS_CURRENT_PRODUCT_ID",
@@ -18,7 +18,7 @@ function renderProductDetails() {
     );
 
     if (!currentProduct) {
-        console.log("Product not found");
+        // console.log("Product not found");
         return;
     }
 

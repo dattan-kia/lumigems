@@ -2,7 +2,7 @@ const products = [
     {
         parentId: "V22",
         id: "V22_1",
-        name: "Vòng tay Macrame Thạch anh hồng, Thạch anh vàng, thạch anh tím (Rose Quartz, Citrine, Amethyst) 1",
+        name: "Vòng tay Macrame Thạch anh hồng, Thạch anh vàng, thạch anh tím (Rose Quartz, Citrine, Amethyst)",
         image: "./assets/imgs/products/V22/Vòng tay Macrame Thạch anh hồng, Thạch anh vàng, thạch anh tím (Rose Quartz, Citrine, Amethyst) 1.png",
         price: 375000,
         details: "",
@@ -12,7 +12,7 @@ const products = [
     {
         parentId: "V22",
         id: "V22_2",
-        name: "Vòng tay Macrame Thạch anh hồng, Thạch anh vàng, thạch anh tím (Rose Quartz, Citrine, Amethyst) 2",
+        name: "Vòng tay Macrame Thạch anh hồng, Thạch anh vàng, thạch anh tím (Rose Quartz, Citrine, Amethyst)",
         image: "./assets/imgs/products/V22/Vòng tay Macrame Thạch anh hồng, Thạch anh vàng, thạch anh tím (Rose Quartz, Citrine, Amethyst) 2.png",
         price: 375000,
         details: "",
@@ -22,7 +22,7 @@ const products = [
     {
         parentId: "V22",
         id: "V22_3",
-        name: "Vòng tay Macrame Thạch anh hồng, Thạch anh vàng, thạch anh tím (Rose Quartz, Citrine, Amethyst) 3",
+        name: "Vòng tay Macrame Thạch anh hồng, Thạch anh vàng, thạch anh tím (Rose Quartz, Citrine, Amethyst)",
         image: "./assets/imgs/products/V22/Vòng tay Macrame Thạch anh hồng, Thạch anh vàng, thạch anh tím (Rose Quartz, Citrine, Amethyst) 3.png",
         price: 479000,
         details: "",
@@ -32,7 +32,7 @@ const products = [
     {
         parentId: "V22",
         id: "V22_4",
-        name: "Vòng tay Macrame Thạch anh hồng, Thạch anh vàng, thạch anh tím (Rose Quartz, Citrine, Amethyst) 4",
+        name: "Vòng tay Macrame Thạch anh hồng, Thạch anh vàng, thạch anh tím (Rose Quartz, Citrine, Amethyst)",
         image: "./assets/imgs/products/V22/Vòng tay Macrame Thạch anh hồng, Thạch anh vàng, thạch anh tím (Rose Quartz, Citrine, Amethyst) 4.png",
         price: 489000,
         details: "",
@@ -42,7 +42,7 @@ const products = [
     {
         parentId: "V23",
         id: "V23_1",
-        name: "Vòng tay Macrame Đá Flourite 1",
+        name: "Vòng tay Macrame Đá Flourite",
         image: "./assets/imgs/products/V23/Vòng tay Macrame Đá Flourite 1.png",
         price: 279000,
         details: "",
@@ -52,7 +52,7 @@ const products = [
     {
         parentId: "V23",
         id: "V23_2",
-        name: "Vòng tay Macrame Đá Flourite 2",
+        name: "Vòng tay Macrame Đá Flourite",
         image: "./assets/imgs/products/V23/Vòng tay Macrame Đá Flourite 2.png",
         price: 279000,
         details: "",
@@ -62,7 +62,7 @@ const products = [
     {
         parentId: "V23",
         id: "V23_3",
-        name: "Vòng tay Macrame Đá Flourite 3",
+        name: "Vòng tay Macrame Đá Flourite",
         image: "./assets/imgs/products/V23/Vòng tay Macrame Đá Flourite 3.png",
         price: 419000,
         details: "",
@@ -72,7 +72,7 @@ const products = [
     {
         parentId: "V23",
         id: "V23_4",
-        name: "Vòng tay Macrame Đá Flourite 4",
+        name: "Vòng tay Macrame Đá Flourite",
         image: "./assets/imgs/products/V23/Vòng tay Macrame Đá Flourite 4.png",
         price: 419000,
         details: "",
@@ -102,7 +102,7 @@ const products = [
     {
         parentId: "V25",
         id: "V25_1",
-        name: "Vòng tay Macrame Thạch anh tím (Amethyst) 1",
+        name: "Vòng tay Macrame Thạch anh tím (Amethyst)",
         image: "./assets/imgs/products/V25/Vòng tay Macrame Thạch anh tím (Amethyst) 1.png",
         price: 325000,
         details: "",
@@ -112,7 +112,7 @@ const products = [
     {
         parentId: "V25",
         id: "V25_2",
-        name: "Vòng tay Macrame Thạch anh tím (Amethyst) 2",
+        name: "Vòng tay Macrame Thạch anh tím (Amethyst)",
         image: "./assets/imgs/products/V25/Vòng tay Macrame Thạch anh tím (Amethyst) 2.png",
         price: 325000,
         details: "",
@@ -122,7 +122,7 @@ const products = [
     {
         parentId: "V25",
         id: "V25_3",
-        name: "Vòng tay Macrame Thạch anh tím (Amethyst) 3",
+        name: "Vòng tay Macrame Thạch anh tím (Amethyst)",
         image: "./assets/imgs/products/V25/Vòng tay Macrame Thạch anh tím (Amethyst) 3.png",
         price: 325000,
         details: "",
@@ -132,7 +132,7 @@ const products = [
     {
         parentId: "V25",
         id: "V25_4",
-        name: "Vòng tay Macrame Thạch anh tím (Amethyst) 4",
+        name: "Vòng tay Macrame Thạch anh tím (Amethyst)",
         image: "./assets/imgs/products/V25/Vòng tay Macrame Thạch anh tím (Amethyst) 4.png",
         price: 325000,
         details: "",
@@ -142,7 +142,7 @@ const products = [
     {
         parentId: "V26",
         id: "V26_1",
-        name: "Vòng tay Macrame Đá Ô liu (Peridot) 1",
+        name: "Vòng tay Macrame Đá Ô liu (Peridot)",
         image: "./assets/imgs/products/V26/Vong_tay_Macrame_da_o_liu_(Peridot)_1.png",
         price: 779000,
         details: "",
@@ -152,7 +152,7 @@ const products = [
     {
         parentId: "V26",
         id: "V26_2",
-        name: "Vòng tay Macrame Đá Ô liu (Peridot) 2",
+        name: "Vòng tay Macrame Đá Ô liu (Peridot)",
         image: "./assets/imgs/products/V26/Vòng tay Macrame Đá Ô liu (Peridot) 2.png",
         price: 779000,
         details: "",
@@ -162,7 +162,7 @@ const products = [
     {
         parentId: "V26",
         id: "V26_3",
-        name: "Vòng tay Macrame Đá Ô liu (Peridot) 3",
+        name: "Vòng tay Macrame Đá Ô liu (Peridot)",
         image: "./assets/imgs/products/V26/Vòng tay Macrame Đá Ô liu (Peridot) 3.png",
         price: 319000,
         details: "",
@@ -172,7 +172,7 @@ const products = [
     {
         parentId: "V26",
         id: "V26_4",
-        name: "Vòng tay Macrame Đá Ô liu (Peridot) 4",
+        name: "Vòng tay Macrame Đá Ô liu (Peridot)",
         image: "./assets/imgs/products/V26/Vòng tay Macrame Đá Ô liu (Peridot) 4.png",
         price: 319000,
         details: "",
@@ -182,7 +182,7 @@ const products = [
     {
         parentId: "V26",
         id: "V26_5",
-        name: "Vòng tay Macrame Đá Ô liu (Peridot) 5",
+        name: "Vòng tay Macrame Đá Ô liu (Peridot)",
         image: "./assets/imgs/products/V26/Vòng tay Macrame Đá Ô liu (Peridot) 5.JPG",
         price: 779000,
         details: "",
@@ -192,7 +192,7 @@ const products = [
     {
         parentId: "V43",
         id: "V43_1",
-        name: "Vòng tay Macrame Thạch anh kết hợp Peridot 1",
+        name: "Vòng tay Macrame Thạch anh kết hợp Peridot",
         image: "./assets/imgs/products/V43/Vòng tay Macrame Thạch anh kết hợp Peridot 1.JPG",
         price: 559000,
         details: "",
@@ -202,7 +202,7 @@ const products = [
     {
         parentId: "V43",
         id: "V43_2",
-        name: "Vòng tay Macrame Thạch anh kết hợp Peridot 2",
+        name: "Vòng tay Macrame Thạch anh kết hợp Peridot",
         image: "./assets/imgs/products/V43/Vòng tay Macrame Thạch anh kết hợp Peridot 2.JPG",
         price: 559000,
         details: "",
@@ -212,7 +212,7 @@ const products = [
     {
         parentId: "V43",
         id: "V43_3",
-        name: "Vòng tay Macrame Thạch anh kết hợp Peridot 3",
+        name: "Vòng tay Macrame Thạch anh kết hợp Peridot",
         image: "./assets/imgs/products/V43/Vòng tay Macrame Thạch anh kết hợp Peridot 3.JPG",
         price: 559000,
         details: "",
@@ -232,7 +232,7 @@ const products = [
     {
         parentId: "V44",
         id: "V44_2",
-        name: "Vòng tay Macrame Thạch anh hồng kết hợp Aquamarine 2",
+        name: "Vòng tay Macrame Thạch anh hồng kết hợp Aquamarine",
         image: "./assets/imgs/products/V44/Vòng tay Macrame Thạch anh hồng kết hợp Aquamarine 2.JPG",
         price: 550000,
         details: "",
@@ -262,7 +262,7 @@ const products = [
     {
         parentId: "V47",
         id: "V47_1",
-        name: "Vòng tay Macrame Aquamarine kết hợp Thạch anh vàng) 1",
+        name: "Vòng tay Macrame Aquamarine kết hợp Thạch anh vàng)",
         image: "./assets/imgs/products/V47/Vòng tay Macrame Aquamarine kết hợp Thạch anh vàng) 1.JPG",
         price: 589000,
         details: "",
@@ -272,7 +272,7 @@ const products = [
     {
         parentId: "V47",
         id: "V47_2",
-        name: "Vòng tay Macrame Aquamarine kết hợp Thạch anh vàng) 2",
+        name: "Vòng tay Macrame Aquamarine kết hợp Thạch anh vàng)",
         image: "./assets/imgs/products/V47/Vòng tay Macrame Aquamarine kết hợp Thạch anh vàng) 2.JPG",
         price: 589000,
         details: "",
@@ -332,7 +332,7 @@ const products = [
     {
         parentId: "V53",
         id: "V53_1",
-        name: "Vòng tay Macrame Thạch anh hồng, Thạch anh vàng, Thạch anh trắng (Rose Quartz, Citrine, Clear Quartz) 3",
+        name: "Vòng tay Macrame Thạch anh hồng, Thạch anh vàng, Thạch anh trắng (Rose Quartz, Citrine, Clear Quartz)",
         image: "./assets/imgs/products/V53/Vòng tay Macrame Thạch anh hồng, Thạch anh vàng, Thạch anh trắng (Rose Quartz, Citrine, Clear Quartz) 3.jpg",
         price: 550000,
         details: "",
