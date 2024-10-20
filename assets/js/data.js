@@ -376,17 +376,48 @@ export default products;
 const blogs = [
     {
         url: "../../../lumigems/blogs/nhom-nuoc.html",
-        image: "../../../lumigems/assets/imgs/blogs/Đá Phong Thủy Hợp Với Các Cung Hoàng Đạo Nhóm Lửa.png",
+        image: "../../../lumigems/assets/imgs/blogs/Đá Phong Thủy Hợp Với Các Cung Hoàng Đạo Nhóm Nước.png",
         title: "Đá Năng Lượng Hợp Với Các Cung Hoàng Đạo Nhóm Nước: Bọ Cap, Cự Giải, Song Ngư",
-        description:
-            "Nhóm Nước bao gồm Bọ Cap, Cự Giải, Song Ngư – những cung hoàng đạo",
     },
     {
         url: "../../../lumigems/blogs/nhom-lua.html",
-        image: "../../../lumigems/assets/imgs/blogs/Đá Phong Thủy Hợp Với Các Cung Hoàng Đạo Nhóm Lửa (1).png",
+        image: "../../../lumigems/assets/imgs/blogs/Đá Phong Thủy Hợp Với Các Cung Hoàng Đạo Nhóm Lửa.png",
         title: "Đá Năng Lượng Hợp Với Các Cung Hoàng Đạo Nhóm Lửa: Bạch Dương, Sư Tử, Nhân Mã",
-        description:
-            "Nhóm Lửa bao gồm Bạch Dương, Sư Tử và Nhân Mã – những cung hoàng đạo",
+    },
+    {
+        url: "../../../lumigems/blogs/nhom-khi.html",
+        image: "../../../lumigems/assets/imgs/blogs/Đá Phong Thủy Hợp Với Các Cung Hoàng Đạo Nhóm Khí.png",
+        title: " Đá Phong Thủy Hợp Với Các Cung Hoàng Đạo Nhóm Khí: Song Tử, Thiên Bình, Bảo Bình",
+    },
+    {
+        url: "../../../lumigems/blogs/nhom-dat.html",
+        image: "../../../lumigems/assets/imgs/blogs/Đá Phong Thủy Hợp Với Các Cung Hoàng Đạo Nhóm Đất.png",
+        title: "Đá Phong Thủy Hợp Với Các Cung Hoàng Đạo Nhóm Đất: Kim Ngưu, Xử Nữ, Ma Kết",
+    },
+    {
+        url: "../../../lumigems/blogs/nhom-nguoi-menh-kim.html",
+        image: "../../../lumigems/assets/imgs/blogs/Đá Phong Thủy Hợp Với Phong Thủy Cho Người Mệnh Kim.png",
+        title: "Bật Mí Những Viên Đá Phong Thuỷ 'Chuẩn Xịn' Cho Người Mệnh Kim",
+    },
+    {
+        url: "../../../lumigems/blogs/nhom-nguoi-menh-moc.html",
+        image: "../../../lumigems/assets/imgs/blogs/Đá Phong Thủy Hợp Với Phong Thủy Cho Người Mệnh Mộc.png",
+        title: "Bật Mí Những Viên Đá Phong Thuỷ 'Chuẩn Xịn' Cho Người Mệnh Mộc",
+    },
+    {
+        url: "../../../lumigems/blogs/nhom-nguoi-menh-thuy.html",
+        image: "../../../lumigems/assets/imgs/blogs/Đá Phong Thủy Hợp Với Phong Thủy Cho Người Mệnh Thủy.png",
+        title: "Bật Mí Những Viên Đá Phong Thuỷ 'Chuẩn Xịn' Cho Người Mệnh Thuỷ",
+    },
+    {
+        url: "../../../lumigems/blogs/nhom-nguoi-menh-hoa.html",
+        image: "../../../lumigems/assets/imgs/blogs/Đá Phong Thủy Hợp Với Phong Thủy Cho Người Mệnh Hỏa.png",
+        title: "Bật Mí Những Viên Đá Phong Thuỷ 'Chuẩn Xịn' Cho Người Mệnh Hỏa",
+    },
+    {
+        url: "../../../lumigems/blogs/nhom-nguoi-menh-tho.html",
+        image: "../../../lumigems/assets/imgs/blogs/Đá Phong Thủy Hợp Với Phong Thủy Cho Người Mệnh Thổ.png",
+        title: "Bật Mí Những Viên Đá Phong Thuỷ 'Chuẩn Xịn' Cho Người Mệnh Thổ ",
     },
 ];
 export { blogs };

@@ -66,20 +66,71 @@ headerDom.innerHTML = `
                                 </svg>
                             </a>
                             <ul
-                                class="absolute left-0 top-full w-full min-w-60 bg-white border border-gray-200 shadow-lg rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 hidden group-hover:block"
+                                class="blogs-navlinks absolute left-0 top-full w-full min-w-60 bg-white border border-gray-200 shadow-lg rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 hidden group-hover:block"
                             >
                                 <li class="flex justify-center items-center">
                                     <a
                                         href="../../../lumigems/blogs/nhom-lua.html"
-                                        class="w-full px-4 py-2 text-black hover:bg-gray-100"
+                                        class="w-full px-2 py-1 lg:px-4 lg:py-2 text-black hover:bg-gray-100"
+
                                         >NHÓM LỬA</a
                                     >
                                 </li>
                                 <li class="flex justify-center items-center">
                                     <a
                                         href="../../../lumigems/blogs/nhom-nuoc.html"
-                                        class="w-full px-4 py-2 text-black hover:bg-gray-100"
+                                        class="w-full px-2 py-1 lg:px-4 lg:py-2 text-black hover:bg-gray-100"
+
                                         >NHÓM NƯỚC</a
+                                    >
+                                </li>
+                                  <li class="flex justify-center items-center">
+                                    <a
+                                        href="../../../lumigems/blogs/nhom-khi.html"
+                                        class="w-full px-2 py-1 lg:px-4 lg:py-2 text-black hover:bg-gray-100"
+                                        >NHÓM KHÍ</a
+                                    >
+                                </li>
+                                <li class="flex justify-center items-center">
+                                    <a
+                                        href="../../../lumigems/blogs/nhom-dat.html"
+                                        class="w-full px-2 py-1 lg:px-4 lg:py-2 text-black hover:bg-gray-100"
+                                        >NHÓM ĐẤT</a
+                                    >
+                                </li>
+                                 <li class="flex justify-center items-center">
+                                    <a
+                                        href="../../../lumigems/blogs/nhom-nguoi-menh-kim.html"
+                                        class="w-full px-2 py-1 lg:px-4 lg:py-2 text-black hover:bg-gray-100"
+                                        >NHÓM NGƯỜI MỆNH KIM</a
+                                    >
+                                </li>
+                                 <li class="flex justify-center items-center">
+                                    <a
+                                        href="../../../lumigems/blogs/nhom-nguoi-menh-moc.html"
+                                        class="w-full px-2 py-1 lg:px-4 lg:py-2 text-black hover:bg-gray-100"
+                                        >NHÓM NGƯỜI MỆNH MỘC</a
+                                    >
+                                </li>
+                                 <li class="flex justify-center items-center">
+                                    <a
+                                        href="../../../lumigems/blogs/nhom-nguoi-menh-thuy.html"
+                                        class="w-full px-2 py-1 lg:px-4 lg:py-2 text-black hover:bg-gray-100"
+                                        >NHÓM NGƯỜI MỆNH THỦY</a
+                                    >
+                                </li>
+                                 <li class="flex justify-center items-center">
+                                    <a
+                                        href="../../../lumigems/blogs/nhom-nguoi-menh-hoa.html"
+                                        class="w-full px-2 py-1 lg:px-4 lg:py-2 text-black hover:bg-gray-100"
+                                        >NHÓM NGƯỜI MỆNH HỎA</a
+                                    >
+                                </li>
+                                 <li class="flex justify-center items-center">
+                                    <a
+                                        href="../../../lumigems/blogs/nhom-nguoi-menh-tho.html"
+                                        class="w-full px-2 py-1 lg:px-4 lg:py-2 text-black hover:bg-gray-100"
+                                        >NHÓM NGƯỜI MỆNH THỔ</a
                                     >
                                 </li>
                             </ul>
@@ -165,3 +216,14 @@ menuButton.addEventListener("click", () => {
     mobileMenu.classList.toggle("hidden"); // Show/Hide the mobile menu
     mobileMenu.classList.toggle("animate-slide-down"); // Trigger the slide-down animation
 });
+
+function renderActiveRouteBlog() {
+    const blogsNavLinks = document.querySelectorAll(".blogs-navlinks > li > a");
+    // console.log(blogsNavLinks);
+    const activeLink = [...blogsNavLinks].find((link) => {
+        const href = link.getAttribute("href");
+        return href.includes(window.location.pathname);
+    });
+    activeLink.classList.add("font-semibold");
+}
+renderActiveRouteBlog();

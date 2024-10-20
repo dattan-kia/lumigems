@@ -8,7 +8,7 @@
             >
                 <div class="col-span-5 flex items-center justify-start">
                     <p class="text-black text-sm font-semibold hidden md:block">
-                        HOTLINE: <span class="text-orange-500">0343854597</span>
+                        HOTLINE: <span class="text-orange-500">0283.979.797</span>
                     </p>
                     <div class="block md:hidden" id="menu-button">
                         <button >
@@ -134,6 +134,55 @@
                                         href="../../../lumigems/blogs/nhom-nuoc.html"
                                         class="w-full px-2 py-1 lg:px-4 lg:py-2 text-black hover:bg-gray-100"
                                         >NHÓM NƯỚC</a
+                                    >
+                                </li>
+                                 <li class="flex justify-center items-center">
+                                    <a
+                                        href="../../../lumigems/blogs/nhom-khi.html"
+                                        class="w-full px-2 py-1 lg:px-4 lg:py-2 text-black hover:bg-gray-100"
+                                        >NHÓM KHÍ</a
+                                    >
+                                </li>
+                                <li class="flex justify-center items-center">
+                                    <a
+                                        href="../../../lumigems/blogs/nhom-dat.html"
+                                        class="w-full px-2 py-1 lg:px-4 lg:py-2 text-black hover:bg-gray-100"
+                                        >NHÓM ĐẤT</a
+                                    >
+                                </li>
+                               <li class="flex justify-center items-center">
+                                    <a
+                                        href="../../../lumigems/blogs/nhom-nguoi-menh-kim.html"
+                                        class="w-full px-2 py-1 lg:px-4 lg:py-2 text-black hover:bg-gray-100"
+                                        >NHÓM NGƯỜI MỆNH KIM</a
+                                    >
+                                </li>
+                                 <li class="flex justify-center items-center">
+                                    <a
+                                        href="../../../lumigems/blogs/nhom-nguoi-menh-moc.html"
+                                        class="w-full px-2 py-1 lg:px-4 lg:py-2 text-black hover:bg-gray-100"
+                                        >NHÓM NGƯỜI MỆNH MỘC</a
+                                    >
+                                </li>
+                                 <li class="flex justify-center items-center">
+                                    <a
+                                        href="../../../lumigems/blogs/nhom-nguoi-menh-thuy.html"
+                                        class="w-full px-2 py-1 lg:px-4 lg:py-2 text-black hover:bg-gray-100"
+                                        >NHÓM NGƯỜI MỆNH THỦY</a
+                                    >
+                                </li>
+                                 <li class="flex justify-center items-center">
+                                    <a
+                                        href="../../../lumigems/blogs/nhom-nguoi-menh-hoa.html"
+                                        class="w-full px-2 py-1 lg:px-4 lg:py-2 text-black hover:bg-gray-100"
+                                        >NHÓM NGƯỜI MỆNH HỎA</a
+                                    >
+                                </li>
+                                 <li class="flex justify-center items-center">
+                                    <a
+                                        href="../../../lumigems/blogs/nhom-nguoi-menh-tho.html"
+                                        class="w-full px-2 py-1 lg:px-4 lg:py-2 text-black hover:bg-gray-100"
+                                        >NHÓM NGƯỜI MỆNH THỔ</a
                                     >
                                 </li>
                             </ul>
